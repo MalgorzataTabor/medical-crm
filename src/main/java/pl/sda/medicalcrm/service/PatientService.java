@@ -36,6 +36,7 @@ public class PatientService {
     public Long changePatientData(Long id, Patient patient) {
         if (!userRepository.findById(id).isPresent()) throw new UserNotFoundException();
         patient.setId(id);
+        patient.setPassword(passwordEncoder.encode(patient.getPassword()));
         userRepository.save(patient);
         return patient.getId();
     }

@@ -36,7 +36,7 @@ public abstract class User implements UserDetails {
    // @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$")
     private String password;
 
-    @Enumerated(EnumType.STRING)
+   // @Enumerated(EnumType.STRING)
     private TypeOfUser typeOfUser;
 
     private String role;
