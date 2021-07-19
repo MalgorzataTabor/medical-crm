@@ -23,4 +23,10 @@ Project is created with:
 
 	
 ## Setup
-To run this project, install IntelliJ Idea
+To run this project, 
+* install IntelliJ Idea
+* java-version 11
+* server.port =8099
+* MYSQL_HOST:localhost:3306 - application.propertise
+* Maven
+
